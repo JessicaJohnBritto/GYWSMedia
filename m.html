@@ -9,142 +9,462 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Resources</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css?fbclid=IwAR3z6ibi_qr1AesTbEeaJ4TrMKjvp2jFm-0-A7ri0XRJeXccXW_GdIE7It0">
+    
   </head>
   <style>
+    .selector-for-some-widget {
+        box-sizing: content-box;
+      }
+    
+      @media (min-width: 768px)
+      {
+.col-md-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+      }
+
+      .container-fluid.pad1 {
+        padding: 130px 20px;
+    }
+    .container, .container-fluid {
+        max-width: 1180px;
+    }
+
+    .container-fluid {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    ::selection {
+        background: #000;
+        color: #fff;
+        text-shadow: none;
+    }
+    *, :after, :before {
+        box-sizing: border-box;
+    }
+    body {
+        overflow-y: scroll;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        font-family: Gotham SSm A,Gotham SSm B;
+        font-weight: 300;
+        color: #646a72;
+    }
+    div {
+        display: block;
+    }
+
     .row {
         display: flex;
         flex-wrap: wrap;
         margin-right: -15px;
         margin-left: -15px;
     }
-    .m{
-        margin: 0px 0px 5px;
+    .cf:after, .cf:before, .clearfix:after, .clearfix:before, .row:after, .row:before {
+        content: "\0020";
+        display: block;
+        overflow: hidden;
+        visibility: hidden;
+        width: 0;
+        height: 0;
     }
-    .d{
-        padding: 0px 0px 6px;
+    .cf:after, .clearfix:after, .row:after {
+        clear: both;
     }
-    .y{
-        padding: 6px 0px 0px;
+    .blog-heading {
+        font-size: 18px;
+        font-size: 1.125rem;
+        line-height: 1.33333em;
+        letter-spacing: .05556em;
+        text-transform: uppercase;
+        padding-bottom: 1.5rem;
+        border-bottom: 7px solid #f0f3f4;
     }
-    .col-sm-8{
-        margin: 0px 0px 20px;
+    #sharedcount, .blog-heading {
+        color: #b0b0b0;
+        font-family: Gotham SSm A,Gotham SSm B;
+        font-weight: 500;
     }
-    .mass{
-        background-color:rgba(236, 232, 228, 0.673);
-        padding: 5px;
-        margin: 10px;
-        width: 50%;
+    p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
     }
-    .mass1{
-        background-color:white ;
-        padding: 5px;
-        margin: 100px;
+    .excerpt a {
+        display: block;
+        padding: 1em 0;
     }
-    .h1{
-        margin:15px;
-        padding:15px;
+    a, a:visited {
+        color: #00aeef;
     }
-    .col-sm-8
-    {
-        overflow-wrap:break-word;
+    a {
+        background: transparent;
+        transition: color .2s ease-out;
+        outline: 0;
+        text-decoration: none;
     }
-    @media screen and (max-width: 500px) {
-        .col-sm-8 {
-          width: 100%;
-          display: block;
-          justify-content: center;
-          font-size: 50%;
-          overflow-wrap:break-word;
-        }
-        .h1{
-            font-size:15%;
-            justify-content: center;
-            overflow-wrap:break-word;
-        }
-        .mass{
-            background-color:rgba(236, 232, 228, 0.673);
-            padding: 5px;
-            margin: 5px;
+    .post .meta {
+        float: left;
+        width: 138px;
+        margin: 6px 0 0;
+    }
+    .post .dt {
+        font-family: Gotham SSm A,Gotham SSm B;
+        color: #000;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .post .dt .m {
+        display: block;
+        font-size: 14px;
+        font-size: .875rem;
+        line-height: 1em;
+        font-weight: 500;
+        letter-spacing: 0;
+        margin-bottom: 5px;
+        color: #646a72;
+    }
+    .post .dt .d {
+        display: block;
+        font-size: 24px;
+        font-size: 1.5rem;
+        line-height: 1em;
+        font-weight: 500;
+        letter-spacing: 0;
+        padding-bottom: 6px;
+        color: #646a72;
+    }
+    .post .dt hr {
+        width: 50px;
+        margin: 0 auto;
+    }
+    hr {
+        box-sizing: content-box;
+        display: block;
+        height: 1px;
+        border: none;
+        border-top: 1px solid #d8dbdc;
+        margin: 0;
+        text-align: left;
+    }hr {
+        box-sizing: content-box;
+        display: block;
+        height: 1px;
+        border: none;
+        border-top: 1px solid #d8dbdc;
+        text-align: left;
+    }
+    .post .dt .y {
+        display: block;
+        font-size: .875rem;
+        line-height: 1em;
+        font-weight: 500;
+        letter-spacing: 0;
+        padding-top: 6px;
+        color: silver;
+    }
+    .excerpt .post-content {
+        margin-left: 20px;
+        padding-right: 10px;
+    }
+    .excerpt .post-content h1 {
+        margin-bottom: 20px;
+        padding-top: 5px;
+    }
+    .post-content h1, .post-content h2 {
+        letter-spacing: 0;
+        color: #000;
+    }
+    .post-content h1 {
+        
+        font-family: Chronicle SSm A,Chronicle SSm B;
+        
+        font-size: 1.4375rem;
+        line-height: 1.30435em;
+        font-weight: 300;
+    }
+    .excerpt .post-content p {
+        margin: 0;
+        color: #646a72;
+    }
+    .post-content p {
+        font-family: Gotham SSm A,Gotham SSm B;
+        font-size: .875rem;
+        line-height: 1.85714em;
+        font-weight: 300;
+        letter-spacing: 0;
+        padding-bottom: 10px;
+    }
+    .excerpt .author {
+        font-family: Gotham SSm A,Gotham SSm B;
+        font-size: 11px;
+        line-height: 16px;
+        font-weight: 500;
+        color: #00aeef;
+    }
+    .buttons{
+        display: block;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+        padding-top: 5px;
+        padding-bottom:10px;
+    color: #272727;
+    font-weight: 300;
+    line-height: 1.8;
+    word-spacing: normal;
+    letter-spacing: normal;
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    }
+    .btn-primary{
+        background-color: #fdd831;
+    box-shadow: 0 0 1px 1px #e6c32a;
+    color: #5a4a06;
+    white-space: nowrap;
+    }
+    .btn{
+        transition: all .3s;
+    -webkit-transition: all .3s;
+    font-size: .85rem;
+    text-decoration: none;
+    font-family: Rubik,sans-serif;
+    position: relative;
+    outline: 0;
+    border-radius: 5rem;
+    border: none;
+    font-weight: 400;
+    padding: .75rem 1.8rem;
+    background: 0 0;
+    cursor: pointer;
+    text-transform: capitalize;
+    -webkit-appearance: none;
+    background-color: #f4df60;
+    }
+
+    .btn-primary .fa {
+        font-size: .75rem;
+        margin-right: .5rem;
+    }
+    .fa {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        color: #5a4a06;
+    white-space: nowrap;
+    }
+    @media (max-width: 800px){
+        .buttons{
             width: auto;
+            text-align: center;
+            margin-top: 4rem;
+            margin-left: 0;
         }
-        .mass1{
-            background-color:white ;
-            padding: 5px;
-            margin: 50px;
-        }
-      }
+    }
   </style>
   <body>
-      <center>
-      <div class="mass3">
-        <center><h1>Resources</h1></center>
-      <div class="mass1">
-      <div class="mass">
-    <article class="excerpt post clearfix">
-            <div class="meta clearfix">
-                
-        <div class="col-sm-4">
-            <span class="m">July</span>
-            <span class="d">7</span>
-            <hr>
-            <span class="y">2021</span>
-        </div>
-                
-            </div>
-            <div class="col-sm-8">
-                <a href="https://twloha.com/blog/may-love-remain-the-movement/"><h1>May Love Remain the Movement</h1></a>
-                <p>A letter and an update from TWLOHA Founder Jamie Tworkowski. <span class="author">By Jamie Tworkowski</span></p>
-            </div>
-        
-    </article>
-</div>
-<br>
-<div class="mass">
-    <article class="excerpt post clearfix">
-            <div class="meta clearfix">
-                
-        <div class="col-sm-4">
-            <span class="m">July</span>
-            <span class="d">7</span>
-            <hr>
-            <span class="y">2021</span>
-        </div>
-                
-            </div>
-            <div class="col-sm-8">
-                <a href="https://twloha.com/blog/may-love-remain-the-movement/"><h1>May Love Remain the Movement</h1></a>
-                <p>A letter and an update from TWLOHA Founder Jamie Tworkowski. <span class="author">By Jamie Tworkowski</span></p>
-            </div>
-        
-    </article>
-</div>
-<br>
-<div class="mass">
-    <article class="excerpt post clearfix">
-            <div class="meta clearfix">
-                
-        <div class="col-sm-4">
-            <span class="m">July</span>
-            <span class="d">7</span>
-            <hr>
-            <span class="y">2021</span>
-        </div>
-                
-            </div>
-            <div class="col-sm-8">
-                <a href="https://twloha.com/blog/may-love-remain-the-movement/"><h1>May Love Remain the Movement</h1></a>
-                <p>A letter and an update from TWLOHA Founder Jamie Tworkowski. <span class="author">By Jamie Tworkowski</span></p>
-            </div>
-        
-    </article>
-</div>
-      </div>
-      
-      
-</div>
+
+   
+<div class="container-fluid pad1">
+    <!-- Row1 -->
+	<div class="row">
+		<div class="col-md-6" role="main">
+			<p class="blog-heading">Annual Reports</p>
+						
+	
+<article class="excerpt post clearfix">
+	
+		
+		<div class="post-content">
+            <a href="A2021.pdf" target="_blank">
+			<h1>Annual Report 2020-2021</h1></a>
+			<p><iframe src="A2021.pdf" width="100%" height="500px">
+            </iframe><span class="author"></span></p>
+		</div>
+	</a>
+    <p class="blog-heading"></p>
+</article>
 
 
-</center>
+        </div>
+
+        <div class="col-md-6" role="main">
+			<p class="blog-heading">Impact Reports</p>
+						
+	
+<article class="excerpt post clearfix">
+		
+		<div class="post-content">
+            <a href="I2019-20.pdf" target="_blank">
+			<h1>Impact Report 2019-2020</h1></a>
+			<p><iframe src="I2019-20.pdf" width="100%" height="500px">
+            </iframe><span class="author"></span></p>
+		</div>
+	</a>
+    <p class="blog-heading"></p>
+
+</article>
+
+
+        </div>
+
+        </div>
+    <!-- Row2 -->
+    <div class="row">
+            <div class="col-md-6" role="main">
+                            
+        
+    <article class="excerpt post clearfix">
+        
+            
+            <div class="post-content">
+                
+                <h1>Annual Report 2019-2020</h1>
+                <p>We’ve strived to endlessly work for the betterment of the people of Gopali. We are grateful for your support which helped us in realizing our mission over the years.
+
+                    Go through our Annual Report to know about the many events that we conducted throughout the year 2019-20 and the new milestones of our journey.
+                    
+               <p class="buttons"> <a class="btn btn-primary" href="A19-20.pdf" target="_blank"><i class="fa fa-download"></i>Download the report</a></p>
+                <span class="author"></span></p>
+            </div>
+        </a>
+        <p class="blog-heading"></p>
+
+    </article>
+    
+    
+            </div>
+    
+            <div class="col-md-6" role="main">
+                            
+        
+    <article class="excerpt post clearfix">
+            
+            <div class="post-content">
+                
+                <h1>Impact Report 2018-2019</h1>
+                <p>Months of planning goes behind any event that needs to be conducted. The reach of our programs- the impact generated, the many lives transformed and the testimonials of the people associated with the event,is what motivates us to keep performing better! 
+
+                    Go through our Impact Reports for various events to find out about our impact on the society.
+                    
+                    
+               <p class="buttons"> <a class="btn btn-primary" href="I18-19.pdf" target="_blank"><i class="fa fa-download"></i>Download the report</a></p>
+                <span class="author"></span></p>
+            </div>
+        </a>
+        <p class="blog-heading"></p>
+
+    </article>
+    
+    
+            </div>
+    
+            </div>
+
+            <!-- Row3 -->
+
+            <div class="row">
+                <div class="col-md-6" role="main">
+                                
+            
+        <article class="excerpt post clearfix">
+            
+                
+                <div class="post-content">
+                    <h1>Annual Report 2018-2019</h1>
+                    <p>Below attached is the Annual Report of the year 2018-2019. Kindly check it out!
+                        
+                   <p class="buttons"> <a class="btn btn-primary" href="A18-19.pdf" target="_blank"><i class="fa fa-download"></i>Download the report</a></p>
+                    <span class="author"></span></p>                </div>
+            </a>
+            <p class="blog-heading"></p>
+
+        </article>
+        
+        
+                </div>
+        
+                <div class="col-md-6" role="main">
+                                
+            
+        <article class="excerpt post clearfix">
+                
+                <div class="post-content">
+                   
+                    <h1>Impact Report 2017-2018</h1>
+                    <p>Below attached is the Impact Report of the year 2017-2018. Kindly check it out!
+                        
+                        
+                   <p class="buttons"> <a class="btn btn-primary" href="I17-18.pdf" target="_blank"><i class="fa fa-download"></i>Download the report</a></p>
+                    <span class="author"></span></p>
+                </div>
+            </a>
+            <p class="blog-heading"></p>
+
+        </article>
+        
+        
+                </div>
+        
+                </div>
+
+            <!-- Row4 -->
+
+            <div class="row">
+                <div class="col-md-6" role="main">
+                                
+            
+        <article class="excerpt post clearfix">
+            
+                
+                <div class="post-content">
+                   
+                    <h1>Annual Report 2017-2018</h1>
+                    <p>Below attached is the Annual Report of the year 2017-2018. Kindly check it out!
+                        
+                        <p class="buttons"> <a class="btn btn-primary" href="A17-18.pdf" target="_blank"><i class="fa fa-download"></i>Download the report</a></p>
+                         <span class="author"></span></p> 
+                </div>
+            </a>
+            
+        </article>
+        
+        
+                </div>
+        
+                <div class="col-md-6" role="main">
+                                
+            
+        <article class="excerpt post clearfix">
+                
+                <div class="post-content">
+                    
+                    <h1>Impact Report 2016-2017</h1>
+                    <p>Below attached is the Impact Report of the year 2016-2017. Kindly check it out!
+                        
+                        
+                        <p class="buttons"> <a class="btn btn-primary" href="I16-17.pdf" target="_blank"><i class="fa fa-download"></i>Download the report</a></p>
+                         <span class="author"></span></p>
+                </div>
+            </a>
+        </article>
+        
+        
+                </div>
+        
+                </div>
+
+        </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
