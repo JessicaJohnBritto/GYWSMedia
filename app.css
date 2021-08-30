@@ -1,4 +1,6 @@
-.selector-for-some-widget {
+
+
+    .selector-for-some-widget {
         box-sizing: content-box;
       }
     
@@ -500,3 +502,4 @@ h2 {
 .report-block h2 a {
     font-size: 20px;
 }
+
